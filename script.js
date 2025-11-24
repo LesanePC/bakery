@@ -62,3 +62,18 @@ lightbox.addEventListener('click', (e) => {
         lightboxImg.src = '';
     }
 });
+
+document.querySelectorAll('.more-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.getElementById('modal-img').src = btn.dataset.img;
+    document.getElementById('modal-title').textContent = btn.dataset.title;
+    document.getElementById('modal-desc').textContent = btn.dataset.description;
+    document.getElementById('modal').classList.add('active');
+  });
+});
+document.getElementById('modal-close').onclick = function() {
+  document.getElementById('modal').classList.remove('active');
+};
+document.getElementById('modal').onclick = function(e) {
+  if (e.target === this) this.classList.remove('active');
+};

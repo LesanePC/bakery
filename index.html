@@ -39,43 +39,89 @@
         <section id="products" class="products">
             <h2>Продукция</h2>
             <div class="product-grid">
-                <article class="product-card">
-                    <img src="img/products/product1.webp" alt="Круасан с шоколадом">
-                    <h3>Круасан</h3>
-                    <p>Нежное слоеное тесто с ароматной шоколадной начинкой</p>
-                    <p class="price">390.00&#x20bd;</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/products/product2.webp" alt="Французский багет">
-                    <h3>Багет</h3>
-                    <p>Свежий французский багет с хрустящей корочкой</p>
-                    <p class="price">280.00&#x20bd;</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/products/product3.webp" alt="Булочка с корицей Синабон">
-                    <h3>Синабон</h3>
-                    <p>Сдобная булочка с корицей и сливочной глазурью</p>
-                    <p class="price">450.00&#x20bd;</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/products/product4.webp" alt="Мини-круассан">
-                    <h3>Мини-Круасан</h3>
-                    <p>Маленькие слоеные круассаны для легкого перекуса</p>
-                    <p class="price">220.00&#x20bd;</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/products/product5.webp" alt="Донат с глазурью">
-                    <h3>Донат</h3>
-                    <p>Пышный пончик с сахарной пудрой и глазурью</p>
-                    <p class="price">300.00&#x20bd;</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/products/product6.webp" alt="Мини-булочки Синабон">
-                    <h3>Мини-Синабон</h3>
-                    <p>Миниатюрные булочки с корицей и сливочной начинкой</p>
-                    <p class="price">250.00&#x20bd;</p>
-                </article>
-            </div>
+  <article class="product-card">
+    <img src="img/products/product1.webp" alt="Круасан с шоколадом">
+    <h3>Круасан</h3>
+    <p>Нежное слоеное тесто с ароматной шоколадной начинкой</p>
+    <p class="price">390.00&#x20bd;</p>
+    <button class="more-btn"
+      data-title="Круасан"
+      data-description="Состав: Мука, сливочное масло, шоколад, дрожжи, сахар. Калорийность: 340ккал."
+      data-img="img/products/product1.webp">
+      Подробнее
+    </button>
+  </article>
+  <article class="product-card">
+    <img src="img/products/product2.webp" alt="Французский багет">
+    <h3>Багет</h3>
+    <p>Свежий французский багет с хрустящей корочкой</p>
+    <p class="price">280.00&#x20bd;</p>
+    <button class="more-btn"
+      data-title="Багет"
+      data-description="Состав: Мука, вода, соль, дрожжи. Калорийность: 250ккал."
+      data-img="img/products/product2.webp">
+      Подробнее
+    </button>
+  </article>
+  <article class="product-card">
+    <img src="img/products/product3.webp" alt="Булочка с корицей Синабон">
+    <h3>Синабон</h3>
+    <p>Сдобная булочка с корицей и сливочной глазурью</p>
+    <p class="price">450.00&#x20bd;</p>
+    <button class="more-btn"
+      data-title="Синабон"
+      data-description="Состав: Мука, сливочное масло, корица, сахар, глазурь. Калорийность: 380ккал."
+      data-img="img/products/product3.webp">
+      Подробнее
+    </button>
+  </article>
+  <article class="product-card">
+    <img src="img/products/product4.webp" alt="Мини-круассан">
+    <h3>Мини-Круасан</h3>
+    <p>Маленькие слоеные круассаны для легкого перекуса</p>
+    <p class="price">220.00&#x20bd;</p>
+    <button class="more-btn"
+      data-title="Мини-Круасан"
+      data-description="Состав: Мука, сливочное масло, яйца, дрожжи. Калорийность: 190ккал."
+      data-img="img/products/product4.webp">
+      Подробнее
+    </button>
+  </article>
+  <article class="product-card">
+    <img src="img/products/product5.webp" alt="Донат с глазурью">
+    <h3>Донат</h3>
+    <p>Пышный пончик с сахарной пудрой и глазурью</p>
+    <p class="price">300.00&#x20bd;</p>
+    <button class="more-btn"
+      data-title="Донат"
+      data-description="Состав: Мука, яйца, сахарная пудра, масло, глазурь. Калорийность: 320ккал."
+      data-img="img/products/product5.webp">
+      Подробнее
+    </button>
+  </article>
+  <article class="product-card">
+    <img src="img/products/product6.webp" alt="Мини-булочки Синабон">
+    <h3>Мини-Синабон</h3>
+    <p>Миниатюрные булочки с корицей и сливочной начинкой</p>
+    <p class="price">250.00&#x20bd;</p>
+    <button class="more-btn"
+      data-title="Мини-Синабон"
+      data-description="Состав: Мука, сливочное масло, корица, сахар, сливочный крем. Калорийность: 195ккал."
+      data-img="img/products/product6.webp">
+      Подробнее
+    </button>
+  </article>
+</div>
+
+            <div id="modal" class="modal">
+  <div class="modal-content">
+    <button id="modal-close" class="modal-close">&times;</button>
+    <img id="modal-img" src="" alt="" style="max-width:80px;margin-bottom:12px;">
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
         </section>
 
         <section id="gallery" class="gallery">
