@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Пекарня в Москве — свежая выпечка, круассаны, багеты | Your Bakery</title>
+    <meta name="description" content="Пекарня в Москве: свежая выпечка, багеты, круассаны, сдобные булочки, торты на заказ. Лучшие рецепты и натуральные ингредиенты. Приходите за вкусной выпечкой!">
+    <meta name="keywords" content="пекарня, выпечка, багет, хлеб, круассан, торты на заказ, булочная, Москва">
+    <meta name="author" content="Your Bakery">
+    <meta property="og:title" content="Свежая выпечка в Москве – Your Bakery">
+    <meta property="og:description" content="Ваша любимая пекарня – свежий хлеб, круассаны, торты и сдобные булочки ежедневно.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourbakery.ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/svg/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+    
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="img/logo.png" alt="Логотип пекарни Your Bakery" style="height: 80px; object-fit: contain;">
+        <nav>
+            <a href="#products">Продукция</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#reviews">Отзывы</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Свежая выпечка в Москве — <br> Quality cakes, made with love</h1>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Продукция</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="img/products/product1.webp" alt="Круасан с шоколадом">
+                    <h3>Круасан</h3>
+                    <p>Нежное слоеное тесто с ароматной шоколадной начинкой</p>
+                    <p class="price">390.00&#x20bd;</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/products/product2.webp" alt="Французский багет">
+                    <h3>Багет</h3>
+                    <p>Свежий французский багет с хрустящей корочкой</p>
+                    <p class="price">280.00&#x20bd;</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/products/product3.webp" alt="Булочка с корицей Синабон">
+                    <h3>Синабон</h3>
+                    <p>Сдобная булочка с корицей и сливочной глазурью</p>
+                    <p class="price">450.00&#x20bd;</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/products/product4.webp" alt="Мини-круассан">
+                    <h3>Мини-Круасан</h3>
+                    <p>Маленькие слоеные круассаны для легкого перекуса</p>
+                    <p class="price">220.00&#x20bd;</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/products/product5.webp" alt="Донат с глазурью">
+                    <h3>Донат</h3>
+                    <p>Пышный пончик с сахарной пудрой и глазурью</p>
+                    <p class="price">300.00&#x20bd;</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/products/product6.webp" alt="Мини-булочки Синабон">
+                    <h3>Мини-Синабон</h3>
+                    <p>Миниатюрные булочки с корицей и сливочной начинкой</p>
+                    <p class="price">250.00&#x20bd;</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Галерея</h2>
+            <div class="container">
+                <div class="gallery-grid">
+                    <a href="img/gallery/gallery1.webp" class="img-large"><img src="img/gallery/gallery1.webp" alt="Витрина пекарни"></a>
+                    <a href="img/gallery/gallery2.webp" class="img-small"><img src="img/gallery/gallery2.webp" alt="Свежий круасан"></a>
+                    <a href="img/gallery/gallery3.webp" class="img-medium"><img src="img/gallery/gallery3.webp" alt="Ассорти булочек"></a>
+                    <a href="img/gallery/gallery4.webp" class="img-small"><img src="img/gallery/gallery4.webp" alt="Десерты на витрине"></a>
+                    <a href="img/gallery/gallery5.webp" class="img-medium"><img src="img/gallery/gallery5.webp" alt="Французский багет"></a>
+                    <a href="img/gallery/gallery6.webp" class="img-medium"><img src="img/gallery/gallery6.webp" alt="Мини-кексы"></a>
+                    <a href="img/gallery/gallery7.webp" class="img-small"><img src="img/gallery/gallery7.webp" alt="Домашний хлеб"></a>
+                    <a href="img/gallery/gallery8.webp" class="img-medium"><img src="img/gallery/gallery8.webp" alt="Эклеры"></a>
+                    <a href="img/gallery/gallery9.webp" class="img-small"><img src="img/gallery/gallery9.webp" alt="Выпечка и кофе"></a>
+                </div>
+            </div>
+            <div id="lightbox">
+                <button id="lightbox-close">&times;</button>
+                <img src="" alt="Увеличенное фото из галереи" />
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <h2>Отзывы наших клиентов</h2>
+            <div class="reviews-list" id="reviews-list">
+                <article class="review">
+                    <p>Очень вкусная выпечка! Всегда свежо и быстро обслуживают.</p>
+                    <cite>— Анна П.</cite>
+                </article>
+                <article class="review">
+                    <p>Отличное место для утреннего кофе и круассана. Рекомендую!</p>
+                    <cite>— Михаил С.</cite>
+                </article>
+                <article class="review">
+                    <p>Люблю здесь покупать хлеб, качество всегда на высоте.</p>
+                    <cite>— Екатерина Л.</cite>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contacts" id="contacts">
+            <div class="info-left">
+                <h3>Контакты</h3>
+                <div class="socials">
+                    <a href="#" target="_blank" rel="noopener" aria-label="VK">
+                        <img src="img/svg/simple-line-icons--social-vkontakte.svg" alt="VK" class="icon-social" />
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="img/svg/typcn--social-instagram.svg" alt="Instagram" class="icon-social" />
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <img src="img/svg/ion--social-whatsapp.svg" alt="WhatsApp" class="icon-social" />
+                    </a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4565f5b659f7076f0d5f12eae96f2a90521422d04f813aa9a1e3f5b997922e5b&amp;source=constructor" width="500" height="400" frameborder="0" style="border:none;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info-right">
+                <h3>Время работы</h3>
+                <p>Пн–Вс: 08:00–20:00</p>
+                <h3>Адрес</h3>
+                <p>ул. Тестовая, 123, г. Москва</p>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <span>© 2025 Your Bakery. Все права защищены.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
