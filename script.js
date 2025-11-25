@@ -30,6 +30,44 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
+function updateShopStatus() {
+    const now = new Date();
+    const openHour = 8;
+    const closeHour = 20;
+
+    const currentHour = now.getHours();
+    const currentMin = now.getMinutes();
+
+    const shopStatusEl = document.getElementById('shop-status');
+
+    if (currentHour >= openHour && currentHour < closeHour) {
+        // Магазин открыт
+        const closeTime = new Date(now);
+        closeTime.setHours(closeHour, 0, 0, 0);
+        const diffMs = closeTime - now;
+        const diffMin = Math.floor(diffMs / 60000);
+        const h = Math.floor(diffMin / 60);
+        const m = diffMin % 60;
+        shopStatusEl.textContent = `Мы работаем еще ${h}ч ${m}м`;
+    } else {
+        // Магазин закрыт
+        let openTime = new Date(now);
+        if (currentHour >= closeHour) {
+            openTime.setDate(openTime.getDate() + 1);
+        }
+        openTime.setHours(openHour, 0, 0, 0);
+
+        const diffMs = openTime - now;
+        const diffMin = Math.floor(diffMs / 60000);
+        const h = Math.floor(diffMin / 60);
+        const m = diffMin % 60;
+        shopStatusEl.textContent = `Мы закроемся через ${h}ч ${m}м`;
+    }
+}
+
+updateShopStatus();
+setInterval(updateShopStatus, 60000);
+
 const heroText = document.querySelector('.hero h1');
 if (heroText) {
     const html = heroText.textContent.split("").map(
@@ -64,16 +102,16 @@ lightbox.addEventListener('click', (e) => {
 });
 
 document.querySelectorAll('.more-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    document.getElementById('modal-img').src = btn.dataset.img;
-    document.getElementById('modal-title').textContent = btn.dataset.title;
-    document.getElementById('modal-desc').textContent = btn.dataset.description;
-    document.getElementById('modal').classList.add('active');
-  });
+    btn.addEventListener('click', function() {
+        document.getElementById('modal-img').src = btn.dataset.img;
+        document.getElementById('modal-title').textContent = btn.dataset.title;
+        document.getElementById('modal-desc').textContent = btn.dataset.description;
+        document.getElementById('modal').classList.add('active');
+    });
 });
 document.getElementById('modal-close').onclick = function() {
-  document.getElementById('modal').classList.remove('active');
+    document.getElementById('modal').classList.remove('active');
 };
 document.getElementById('modal').onclick = function(e) {
-  if (e.target === this) this.classList.remove('active');
+    if (e.target === this) this.classList.remove('active');
 };
